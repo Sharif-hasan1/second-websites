@@ -1,0 +1,121 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles */
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color: #E6E6E6;
+}
+main{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+.container{
+	background-color: white;
+	width: 1110px;
+	padding: 30px;
+	border-radius: 5px;
+}
+/*------------------------------------
+  		influencer products 
+ --------------------------------------*/
+ .section-title{
+	 margin-bottom: 30px;
+ }
+ .products{
+	 display: flex;
+	 margin-top: 30px;
+ }
+ .product{
+	padding-right: 100px;
+ }
+ .product a{
+	 text-decoration: none;
+	 color: white;
+	 background-color: #E02C6D;
+	 border: 1px solid #E02C6D ;
+	 border-radius: 41px;
+	 padding: 10px 24px;
+ }
+ .product img{
+	height: 280px;
+	 width: 280px;
+	 background-color: ghostwhite;
+	 border: 1px solid #E6E6E6;
+	 border-radius: 50%;
+ }
+ .products-title{
+	 text-align: center;
+	 margin-top: 50px;
+	 margin-bottom: 50px;
+ }
+ .products-info{
+	 display: grid;
+	 grid-template-columns: repeat(3, 1fr);
+	 grid-row-gap: 30px;
+	 grid-column-gap: 20px;
+	 background-color: #E6E6E6;
+	 margin-bottom: 100px;
+ }
+ .products-detail{
+	 background-color: white;
+	 width: 320px;
+	 height: 476px;
+	 padding-left: 30px;
+	 padding-bottom: 50px;
+	 padding-top: 10px;
+	 box-shadow: 10px 10px 5px 20px #FBFBFB;
+	 
+ }
+ .products-detail img{
+	 width: 300px;
+	 height: 256px;
+ }
+ .fa-star{
+	color: #FFC014;
+ }
+ footer {
+	text-align: center;
+ }
+ footer div{
+	 background-color: black;
+	 color: white;
+	 padding: 20px;
+	 margin-top: 40px;
+ }
+
+ /*---------------------------
+  		Media Queries 
+  ---------------------------*/
+
+  /* Mobile Devices */
+  @media only screen and (max-width: 888px){
+	  
+	  .container{
+		  width: 100%;
+	  }
+	  .product img{
+		  margin-top: 30px;
+	  }
+	  .products, .products-info{
+		  display: grid;
+		  grid-template-columns: repeat(1, 1fr);
+	  }
+	  .product, .products-detail{
+		  flex-direction: column;
+	  }
+	  
+  }
+
+  /* Tablet Device */
+
+ @media only screen and (min-width: 688px) and (max-width: 992px) {
+	 .container{
+		 width: 100%;
+	 }
+	 .products, .products-info{
+		 display: grid;
+		 grid-template-columns: repeat(2, 1fr);
+	 } 
+ }
+		
